@@ -14,11 +14,9 @@ public class DigitCancelingFractions
             for(double denominator = 10; denominator < 100; denominator++) {
                 if(numerator < denominator) {  
                     if(checkCurious(numerator, denominator)) {
-                        if(arrayCount != 4) {
-                            numeratorArray[arrayCount] = numerator;
-                            denominatorArray[arrayCount] = denominator;
-                            arrayCount++;
-                        }      
+                        numeratorArray[arrayCount] = numerator;
+                        denominatorArray[arrayCount] = denominator;
+                        arrayCount++;
                     } 
                 }   
             } // End denominator For-Loop
